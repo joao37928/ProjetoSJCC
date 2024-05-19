@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Porto</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card-player">
+      <div class="conteudo-musica">
+        <img src="assets/Imagens/Billie-Eilish-Hit-Me-Hard-and-soft.png" alt="Capa da Música" class="capa-musica">
+        <div class="desc-musica">
+          <p class="tituloMusica">Chihiro</p>
+          <span class="artistaMusica">Billie Ellish</span> 
+          <audio id="myAudio1" src="assets/Musicas/Billie-Chiriro.mp3"></audio>
+        </div>
+      </div>
+      <div class="controles">
+        <button class="voltar" onclick="voltar('myAudio1')"><img src="./assets/voltar.png" alt="voltar"></button>
+        <button id="play1" class="play" onclick="play('myAudio1')"><img src="./assets/play.png" alt="play"></button>
+        <button class="pause hide" onclick="pause('myAudio1')"><img src="./assets/pause.jpg" alt="pause"></button>
+        <button class="avancar" onclick="avancar('myAudio1')"><img src="./assets/avancar.png" alt="avancar"></button>
+      </div>
+      <div class="container-progresso">
+        <input class="progressBar" type="range" value="0" min="0" max="100" step="1">
+      </div>
+      <div class="tempo-musica">
+        <span class="tempoAtual">00:00</span>
+        <span class="tempoTotal">05:03</span>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

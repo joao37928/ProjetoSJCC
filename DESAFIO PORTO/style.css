@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  background: #1e1d1d; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-player {
+  background: #191414;
+  color: #FFFFFF; 
+  display: grid;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  border: 2px solid #000000; 
+}
+
+.card-player img {
+  width: 100%;
+  border-radius: 0%;
+}
+
+.desc-musica {
+  margin: 20px 0px 15px 0px;
+}
+
+.desc-musica span {
+  color: #B3B3B3; 
+}
+
+.conteudo-musica p {
+  font-size: 1.8rem; 
+  margin: 10px 0;
+}
+
+.conteudo-musica span {
+  font-size: 1.4rem; 
+}
+
+.controles {
+  margin: 20px 0px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.controles button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px; 
+}
+
+.controles button img {
+  width: 32px;
+  height: 32px;
+}
+
+#play img, #pause img {
+  width: 48px; 
+  height: 48px;
+}
+
+.container-progresso input {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.tempo-musica {
+  margin-top: 20px;
+  font-size: 1.4rem; 
+  color: #B3B3B3; 
+}
